@@ -1,0 +1,11 @@
+The problem related to JOINS
+https://www.hackerrank.com/challenges/contest-leaderboard/problem
+
+
+
+SELECT i,n,SUM(s)
+FROM(SELECT Hackers.Hacker_id AS i,Hackers.Name AS n,MAX(Submissions.Score) AS s,Submissions.challenge_id as ci FROM Hackers INNER JOIN Submissions ON Hackers.Hacker_id=Submissions.Hacker_id GROUP BY Hackers.Hacker_id,Hackers.Name,Submissions.challenge_id)
+WHERE s!=0 GROUP BY i,n ORDER BY SUM(s) DESC, i ASC;
+
+
+
