@@ -1,6 +1,15 @@
+/*Problem Statement : 
+TL;
+
+
 The problem related to JOINS
+
+
+Problem URL :
 https://www.hackerrank.com/challenges/contest-leaderboard/problem
 
+
+SOLUTION ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 
 SELECT i,n,SUM(s)
